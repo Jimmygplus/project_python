@@ -1,0 +1,14 @@
+$def with (user)
+<table border="1">
+    <tr>
+        <td>user_ID</td>
+        <td>user_name</td>
+    </tr>
+$for test in user:
+    <tr>
+        <td>$test.user_ID</td>
+        <td>$test.user_name</td>
+    </tr>
+    <!--<li id="t$test.user_ID">$test.user_ID</li>-->
+    <!--<li id="t$test.user_ID">$test.user_name</li>-->
+</table>

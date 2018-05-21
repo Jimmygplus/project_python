@@ -1,0 +1,215 @@
+$def with ()
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name = "viewport" content = "width-device=width,initial = 1.0"/>
+
+        <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    	<style type="text/css">
+            html, body {
+                width:100%;
+                height:100%;
+                background-color: #1F1F1F;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 15px;
+                line-height: 1.50;
+                color: #1F1F1F;
+                position: relative;
+            }
+            .navbar {
+                background-color: #1F1F1F;
+                background-size: cover;
+                text-align: center;
+                border: none;
+            }
+            .navbar-brand {
+                font-size: 43px;
+                font-family: 'Open Sans', sans-serif;
+                color: #B9936C !important;
+                padding-top: 45px;
+                margin-left: 30px;
+            }
+            .navbar-right {
+                font-size: 20px;
+                font-family: 'Open Sans', sans-serif;
+                float: right;
+                margin-top: 20px;
+                margin-right: 30px;
+            }
+            .navbar-default {
+                padding:20px 0;
+                transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+            }
+            .navbar-default a {
+                background:transparent !important;
+                color:#fff !important
+            }
+            .navbar-default a:hover {
+                color:#B9936C !important;
+                background:transparent;
+                outline:0
+            }
+            .navbar-default a {
+                transition: color 0.5s ease-in-out;
+            }
+            .carousel-inner {
+                height: 1030px;
+            }
+
+            .subfooter {
+                background-color: #B9936C;
+                padding: 40px 0;
+            }
+
+            .section {
+                background-color: #ffffff;
+                padding: 80px 0;
+            }
+
+            .footer h1{
+                font-family: 'Open Sans', sans-serif;
+                color:#fff;
+            }
+            .footer.section {
+                background: #1F1F1F;
+                color: #949494;
+            }
+            .subfooter p {
+                margin-bottom: 0;
+                color: #fff;
+            }
+
+            /* Buttons
+            ---------------------------------- */
+            .btn {
+                padding: 8px 15px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                min-width: 160px;
+                text-align: center;
+                border-radius: 0;
+                text-transform: uppercase;
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -ms-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+            }
+            .btn-default {
+                color: #FFFFFF;
+                background: #B9936C;
+                border: 0;
+            }
+            .btn-default:hover {
+                color: #ffffff;
+                background-color: #C78550;
+                border: 0;
+            }
+        </style>
+	</head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+    	<div class="navbar-header">
+        	<p class="navbar-brand">NetCafe</p>
+    	</div>
+       
+    	<ul class="nav navbar-nav navbar-right">
+      		<li><a href="/register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+      		<li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+    	</ul>
+		</nav>
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+		<ol class="carousel-indicators">
+			<li data-target="#Carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#Carousel" data-slide-to="1"></li>
+			<li data-target="#Carousel" data-slide-to="2"></li>
+			<li data-target="#Carousel" data-slide-to="3"></li>
+			<li data-target="#Carousel" data-slide-to="4"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="https://s1.ax1x.com/2018/05/06/CUwuHf.jpg" alt="First slide" width="100%">
+			</div>
+			<div class="item">
+				<img src="https://s1.ax1x.com/2018/05/06/CUwME8.jpg" alt="Second slide" width="100%">
+			</div>
+			<div class="item">
+				<img src="https://s1.ax1x.com/2018/05/06/CUwnDP.jpg" alt="Third slide" width="100%">
+			</div>
+			<div class="item">
+				<img src="https://s1.ax1x.com/2018/05/06/CUwQUS.jpg" alt="Third slide" width="100%">
+			</div>
+			<div class="item">
+				<img src="https://s1.ax1x.com/2018/05/06/CUwmut.jpg" alt="Third slide" width="100%">
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		</a>
+	   </div>
+
+       <footer id="footer">
+            <div class="footer section">
+                <div class="container">
+                    <h1 class="title text-center" id="contact">Contact Us</h1>
+                    <div class="space"></div>
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="footer-content">
+                                <form role="form" id="footer-form">
+                                    <div class="form-group has-feedback">
+                                        <label class="sr-only" for="name2">Name</label>
+                                        <input type="text" class="form-control" id="name2" placeholder="Name" name="name2" required>
+                                        <i class="fa fa-user form-control-feedback"></i>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label class="sr-only" for="message2">Message</label>
+                                        <textarea class="form-control" rows="8" id="message2" placeholder="Message..." name="message2" required></textarea>
+                                        <i class="fa fa-pencil form-control-feedback"></i>
+                                    </div>
+                                    <input type="submit" value="Send" class="btn btn-default">
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="footer-content">
+                            <div class="widget-content">
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nam magnam natus tempora cumque, aliquam deleniti voluptatibus voluptas. Maecenas ultrices finibus erat sit amet auctor. Curabitur et metus laoreet, fermentum quam sagittis, cursus augue. </p><br/>
+
+                                <p class="contacts"><i class="fa fa-map-marker"></i> 1508 Kembery Drive, Chicago, IL 60605 </p>
+
+                                <p class="contacts"><i class="fa fa-phone"></i> 202-314-1583</p>
+
+                                <p class="contacts"><i class="fa fa-envelope"></i> support@biss.com</p>
+
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-center">Copyright  2016.Company name All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
